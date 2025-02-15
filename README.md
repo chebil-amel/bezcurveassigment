@@ -29,19 +29,11 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/bezier-curve-visualizer.git
+     https://github.com/chebil-amel/bezcurveassigment.git
 
  ## Installation
    cd bezier-curve-visualizer
    npm install
 
-## console.log("Bézier Curve Visualizer is running...");
-console.log("Features:");
-console.log("- Cubic Bézier Curve");
-console.log("- Cubic Bézier Curve Generator");
-console.log("- Cubic Spline Interpolation");
-console.log("Components:");
-console.log("- BezierCurve");
-console.log("- InteractiveBezier");
-console.log("- CubicInterpolation");Starttheproject 
+
    npm start#
