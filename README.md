@@ -35,9 +35,9 @@ To run this project locally, follow these steps:
    ```bash
      https://github.com/chebil-amel/bezcurveassigment.git
 
- ## Installation dependancy
+## Installation dependancy
    cd bezier-curve-visualizer
    npm install
 
-##start 
-   npm start#
+## start 
+   npm start
