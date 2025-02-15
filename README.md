@@ -1,7 +1,7 @@
 # Bézier Curve Visualizer
 # bezcurveassigment
 
-![Example Image](public/image.png)
+![Example Image](./public/image.png)
 
 This repository contains the implementation of cubic Bézier curve interpolation and approximation.
 
