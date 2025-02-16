@@ -17,8 +17,15 @@ const BezierCurve: React.FC = () => {
   const svgRef = useRef<SVGSVGElement>(null);
 
   const handleDrag = (index: number, event: React.MouseEvent) => {
+    const svg = svgRef.current;
+    if (!svg) return;
+
+    const rect = svg.getBoundingClientRect();
+    const x = Math.max(0, Math.min(rect.width, event.clientX - rect.left));
+    const y = Math.max(0, Math.min(rect.height, event.clientY - rect.top));
+    
     const newPoints = [...points];
-    newPoints[index] = { x: event.clientX, y: event.clientY };
+    newPoints[index] = { x, y };
     setPoints(newPoints);
   };
 

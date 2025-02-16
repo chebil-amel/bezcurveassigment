@@ -49,6 +49,7 @@ const App: React.FC = () => {
   return (
     <div>
       <h1>Bézier Curve</h1>
+      <h2>A React-based project demonstrating the implementation of cubic Bézier curve interpolation and approximation. It includes features for interactive control point manipulation, visual curve rendering, and a responsive user interface, enabling users to experiment with Bézier curves and cubic splines.</h2>
       {components.map(({ key, title, description, component }) => (
         <div className="customDiv" key={key}>
           <h2 onClick={() => toggleVisibility(key)} style={{ cursor: "pointer" }}>

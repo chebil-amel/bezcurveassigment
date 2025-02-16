@@ -83,8 +83,8 @@ const CubicInterpolation: React.FC = () => {
     if (!canvas) return;
 
     const rect = canvas.getBoundingClientRect();
-    const xClick = event.clientX - rect.left;
-    const yClick = event.clientY - rect.top;
+    const xClick = Math.max(0, Math.min(rect.width, event.clientX - rect.left));
+    const yClick = Math.max(0, Math.min(rect.height, event.clientY - rect.top));
 
     // Find nearest control point
     const distances = controlPoints.map(([x, y]) =>
@@ -114,6 +114,9 @@ const CubicInterpolation: React.FC = () => {
         onClick={handleCanvasClick}
       />
       <h2>The interpolation in this code is achieved through cubic Bézier curves, utilizing Bernstein basis functions and matrix operations to compute the curve's control points. This allows for smooth, continuous curves that can be interactively manipulated by the user.</h2>
+    <small>
+  The `CubicInterpolation` component is a React functional component that visualizes cubic Bézier curves. It allows users to interactively manipulate control points on a canvas, and the curve is redrawn accordingly. The component uses Bernstein basis functions and matrix operations to compute the control points of the Bézier curve, ensuring smooth and continuous curves. The `mathjs` library is used for matrix operations. Users can click on the canvas to adjust the nearest control point, and the curve is updated in real-time. Boundary checks are implemented to ensure control points do not go outside the canvas.
+</small>
     </div>
   );
 };
