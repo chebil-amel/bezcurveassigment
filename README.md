@@ -2,6 +2,10 @@
 # bezcurveassigment
 
 ![Example Image](./public/image.png)
+![Example Image](./public/img1.png)
+![Example Image](./public/img2.png)
+![Example Image](./public/img3.png)
+![Example Image](./public/img4.png)
 
 This repository contains the implementation of cubic Bézier curve interpolation and approximation.
 
@@ -31,9 +35,9 @@ To run this project locally, follow these steps:
    ```bash
      https://github.com/chebil-amel/bezcurveassigment.git
 
- ## Installation dependancy
+## Installation dependancy
    cd bezier-curve-visualizer
    npm install
 
-##start 
-   npm start#
+## start 
+   npm start
